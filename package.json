@@ -1,0 +1,31 @@
+{
+  "name": "mastodon-action-analystics-bot",
+  "version": "1.0.0",
+  "description": "matodon-action-analystics-bot",
+  "main": "main.js",
+  "scripts": {
+    "debug": "NODE_DEBUG=true node main.js",
+    "start": "node main.js",
+    "restart": "[ -f db.sqlite3 ] && rm db.sqlite3; node main.js",
+    "clear": "[ -f db.sqlite3 ] && rm db.sqlite3",
+    "speed": "node speed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wd-shiroma/mastodon-action-analystics-bot.git"
+  },
+  "author": "guskma",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/wd-shiroma/mastodon-action-analystics-bot/issues"
+  },
+  "homepage": "https://github.com/wd-shiroma/mastodon-action-analystics-bot#readme",
+  "dependencies": {
+    "config": "^1.30.0",
+    "md5": "^2.2.1",
+    "plotter": "^0.5.0",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "sqlite3": "^4.0.0"
+  }
+}

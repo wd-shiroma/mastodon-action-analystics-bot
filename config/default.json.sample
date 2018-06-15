@@ -1,0 +1,6 @@
+{
+    "domain": "example.com",
+    "token": "YOUR_ACCESS_TOKEN",
+    "crypt_salt": "foobar",
+    "timewait": 1000
+}
